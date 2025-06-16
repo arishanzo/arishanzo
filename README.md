@@ -19,7 +19,7 @@ Selama 3 tahun terakhir, saya telah:
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?logo=tailwind-css&logoColor=white&style=for-the-badge)
 
 ## 📈 My Portfolio
-![Aris Wahyudi]((https://github-readme-stats.vercel.app/api?username=rahmat123&show_icons=true&theme=radical](https://arishanzo.github.io/arisportfolio/))
+(https://arishanzo.github.io/arisportfolio/)
 
 ## 📫 Hubungi Saya
 - 💼 [LinkedIn] ((https://www.linkedin.com/in/rahmat123/](https://www.linkedin.com/in/aris-wahyudi-09a729165/))
