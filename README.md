@@ -7,12 +7,6 @@
 I am a **Web Developer** with over **3 years** of experience in building modern and responsive web applications. 
 I have a keen interest in Website development, open-source technologies, and efficient UI/UX development.
 
-## 💼 Experience
-Over the past 3 years, I have:
-- Developed various websites and applications based on **HTML, CSS, JavaScript, React Js, Vue.js and Laravel**
-- Integrating APIs and building lightweight backends using **Node.js**, and **Laravel**
-- Implementing responsive and high-performance designs using **Tailwind CSS** and **SASS**
-- Working in teams, using **Git**, **GitHub**, and **CI/CD tools** such as GitHub Actions
 
 
 ## 🌐 Socials:
@@ -24,6 +18,14 @@ Over the past 3 years, I have:
 ![](https://github-readme-stats.vercel.app/api?username=arishanzo&theme=radical&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=arishanzo&theme=radical&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=arishanzo&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+
+## 💼 Experience
+Over the past 3 years, I have:
+- Developed various websites and applications based on **HTML, CSS, JavaScript, React Js, Vue.js and Laravel**
+- Integrating APIs and building lightweight backends using **Node.js**, and **Laravel**
+- Implementing responsive and high-performance designs using **Tailwind CSS** and **SASS**
+- Working in teams, using **Git**, **GitHub**, and **CI/CD tools** such as GitHub Actions
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=arishanzo&theme=radical&no-frame=false&no-bg=false&margin-w=4)
