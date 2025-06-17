@@ -1,3 +1,109 @@
+# 🕹️ Game Mario Mini (HTML + CSS + JS)
+
+Ini adalah game Mario mini yang bisa kamu jalankan langsung di browser. Mario bisa **lompat** untuk menghindari **pipa**, seperti game Dino di Chrome.
+
+---
+
+## 🎮 Cara Bermain
+
+- Tekan `Spasi` atau klik layar untuk **melompat**
+- Hindari tabrakan dengan pipa
+- Game over jika kena pipa
+
+---
+
+## 💻 Kode Lengkap: `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Mario Mini</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { overflow: hidden; font-family: sans-serif; }
+
+    #game {
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(to top, #7ec850, #87ceeb);
+      position: relative;
+    }
+
+    #mario {
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+      width: 50px;
+      height: 50px;
+      background: url('https://i.imgur.com/NbRkD5l.png') no-repeat center;
+      background-size: contain;
+    }
+
+    #pipe {
+      position: absolute;
+      bottom: 0;
+      right: -50px;
+      width: 50px;
+      height: 70px;
+      background: url('https://i.imgur.com/2zFvDtR.png') no-repeat center;
+      background-size: contain;
+      animation: pipeMove 2s linear infinite;
+    }
+
+    @keyframes pipeMove {
+      from { right: -50px; }
+      to { right: 100vw; }
+    }
+
+    .jump {
+      animation: jump 0.5s ease-out;
+    }
+
+    @keyframes jump {
+      0%   { bottom: 0; }
+      50%  { bottom: 120px; }
+      100% { bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div id="game">
+    <div id="mario"></div>
+    <div id="pipe"></div>
+  </div>
+
+  <script>
+    const mario = document.getElementById('mario');
+    const pipe = document.getElementById('pipe');
+
+    function jump() {
+      if (!mario.classList.contains('jump')) {
+        mario.classList.add('jump');
+        setTimeout(() => mario.classList.remove('jump'), 500);
+      }
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.code === 'Space') jump();
+    });
+
+    document.addEventListener('click', jump);
+
+    // Deteksi tabrakan
+    setInterval(() => {
+      const pipeLeft = pipe.getBoundingClientRect().left;
+      const marioBottom = parseInt(window.getComputedStyle(mario).bottom);
+
+      if (pipeLeft < 100 && pipeLeft > 0 && marioBottom < 50) {
+        alert('💀 GAME OVER!');
+        location.reload();
+      }
+    }, 10);
+  </script>
+</body>
+</html>
 
 
 # 💫 About Me:
